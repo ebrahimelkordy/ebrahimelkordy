@@ -1,4 +1,4 @@
-# 🚀 Ebrahim Elkordy | Full-Stack Software Engineer
+# 🚀 IBRAHIM HASHISH | Full-Stack Software Engineer
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A855F7&center=true&vCenter=true&width=940&lines=Building+the+Future+of+Digital+Experiences;Full-Stack+Developer+%7C+System+Architect;Turning+Ideas+into+Scalable+Solutions" alt="Typing SVG" />
