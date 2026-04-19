@@ -128,7 +128,7 @@ const devopsSkills = {
 ## 📈 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ebrahimelkordy&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=FFFFFF" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ebrahimhashish&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=FFFFFF" alt="Top Languages" />
 
   <br />
 
@@ -149,16 +149,13 @@ const devopsSkills = {
 ## 📞 Let's Connect
 
 <div align="center">
-  <a href="https://linkedin.com/in/ebrahimelkordy" target="_blank">
+  <a href="https://www.linkedin.com/in/ebrahim-hashish-3a104b214/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://twitter.com/ebrahimelkordy" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
-  </a>
-  <a href="mailto:ebrahim.elkordy@email.com" target="_blank">
+  <a href="mailto:ebrahimkordy0@email.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://ebrahimelkordy.dev" target="_blank">
+  <a href="https://ebrahim-hashish-software-engineer.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
 </div>
@@ -198,9 +195,8 @@ Linux                    2 hrs 45 mins   ███░░░░░░░░░░
 </div>
 
 - ☕ **Fuel**: Coffee-powered development sessions
-- 🎵 **Soundtrack**: Lo-fi beats for deep focus coding
 - 🌍 **Languages**: Fluent in Arabic & English
-- 🎯 **Hobbies**: Soccer analytics, photography, and tech blogging
+- 🎯 **Hobbies**: MMA, strength training, and tech blogging.
 - 🔄 **Philosophy**: "Code is poetry written in logic"
 
 ---
