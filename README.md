@@ -1,213 +1,152 @@
-# 🚀 IBRAHIM HASHISH | Full-Stack Software Engineer
+<div align="center">
+
+<!-- Animated Dynamic Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:A855F7,100:00f4fe&height=250&section=header&text=EBRAHIM%20HASHISH&fontSize=70&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=Software%20Architect%20%E2%80%A2%20Full-Stack%20Engineer&descAlignY=55&descAlign=50" />
+
+<a href="https://github.com/ebrahimelkordy">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=4000&pause=1000&color=00F4FE&center=true&vCenter=true&width=750&lines=%3E_System.init();%3E_Compiling_Scalable_Architectures...;%3E_Deploying_Enterprise_Solutions...;%3E_Optimizing_Performance_to_Sub-50ms...;%3E_Status:_100%25_Operational" alt="Typing SVG" />
+</a>
+
+<br/>
+
+<a href="https://www.linkedin.com/in/ebrahim-hashish-b2b256406/"><img src="https://custom-icon-badges.demolab.com/badge/-LinkedIn-0077B5?style=for-the-badge&logoColor=white&logo=linkedin" alt="LinkedIn"></a>
+<a href="https://ebrahim-hashish-software-engineer.vercel.app/"><img src="https://custom-icon-badges.demolab.com/badge/-Live_Portfolio-0D1117?style=for-the-badge&logoColor=00F4FE&logo=globe" alt="Portfolio"></a>
+<a href="mailto:ebrahimkordy0@gmail.com"><img src="https://custom-icon-badges.demolab.com/badge/-Signal_Me-D14836?style=for-the-badge&logoColor=white&logo=mail" alt="Email"></a>
+
+<br/><br/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=ebrahimelkordy&theme=radical&no-frame=true&no-bg=true&margin-w=15" />
+
+</div>
+
+<br/>
+
+## ⚡ Ｅｘｅｃｕｔｉｖｅ　Ｓｕｍｍａｒｙ
+
+> **"Code is poetry written in logic, deployed to scale."**
+
+I engineer high-performance, enterprise-grade applications focusing on **scalability, clean architecture, and uncompromising quality**. I don't just write code; I design robust systems that solve complex business bottlenecks, handling extreme concurrency with minimal latency. My approach bridges the gap between sophisticated backend infrastructure and stunning frontend experiences.
+
+---
+
+## 🛠️ Ｔｅｃｈｎｏｌｏｇｙ　Ｍａｔｒｉｘ
+
+<table align="center" style="border-collapse: collapse; border: none; width: 100%;">
+  <tr style="border: none;">
+    <td align="center" width="33%" style="border: none;">
+      <h3 align="center">🌐 Frontend Core</h3>
+      <br />
+      <img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,redux,vite&perline=3" />
+    </td>
+    <td align="center" width="33%" style="border: none;">
+      <h3 align="center">⚙️ Backend & API</h3>
+      <br />
+      <img src="https://skillicons.dev/icons?i=nodejs,express,graphql,nestjs,python,rust&perline=3" />
+    </td>
+    <td align="center" width="33%" style="border: none;">
+      <h3 align="center">💾 Database & Cloud</h3>
+      <br />
+      <img src="https://skillicons.dev/icons?i=mongodb,postgres,redis,docker,aws,linux&perline=3" />
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🏆 Ａｒｃｈｉｔｅｃｔｕｒａｌ　Ｓｈｏｗｃａｓｅ
+
+<table align="center" width="100%" style="border-collapse: collapse;">
+  <tr>
+    <td width="50%" valign="top" style="padding: 15px;">
+      <h3 align="center">🏫 Nibras LMS</h3>
+      <p align="center"><i>Multi-Tenant SaaS Learning Platform</i></p>
+      <ul>
+        <li><b>Architecture:</b> Logical Isolation Multi-Tenancy</li>
+        <li><b>Real-Time:</b> Socket.IO + Redis Pub/Sub</li>
+        <li><b>Security:</b> Strict RBAC & Dual-Token Auth</li>
+      </ul>
+      <p align="center"><a href="https://github.com/ebrahimelkordy/nibras-lms"><img src="https://img.shields.io/badge/Source_Code-View-A855F7?style=flat-square&logo=github" /></a></p>
+    </td>
+    <td width="50%" valign="top" style="padding: 15px;">
+      <h3 align="center">⚽ Soccer Street</h3>
+      <p align="center"><i>Hexagonal Architecture Tournament Platform</i></p>
+      <ul>
+        <li><b>Refactoring:</b> Strangler Fig from Monolith</li>
+        <li><b>Performance:</b> Optimized B-Tree indexing</li>
+        <li><b>State:</b> Zustand + TanStack Query</li>
+      </ul>
+      <p align="center"><a href="https://github.com/ebrahimelkordy/soccer-street"><img src="https://img.shields.io/badge/Source_Code-View-00F4FE?style=flat-square&logo=github" /></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" style="padding: 15px;">
+      <h3 align="center">🛍️ Zaad Store</h3>
+      <p align="center"><i>High-throughput E-Commerce Ecosystem</i></p>
+      <ul>
+        <li><b>Concurrency:</b> Optimistic Concurrency Control</li>
+        <li><b>Payments:</b> Stripe + Webhook verification</li>
+        <li><b>Caching:</b> Edge caching & Redis sessions</li>
+      </ul>
+      <p align="center"><a href="https://github.com/ebrahimelkordy/Zaad-store"><img src="https://img.shields.io/badge/Source_Code-View-00F4FE?style=flat-square&logo=github" /></a></p>
+    </td>
+    <td width="50%" valign="top" style="padding: 15px;">
+      <h3 align="center">🚀 System Portfolio</h3>
+      <p align="center"><i>Interactive High-Performance Profile</i></p>
+      <ul>
+        <li><b>UX/UI:</b> Cyberpunk aesthetics & Animations</li>
+        <li><b>Full-Stack:</b> Next.js + Prisma + PostgreSQL</li>
+        <li><b>Performance:</b> 100/100 Lighthouse score</li>
+      </ul>
+      <p align="center"><a href="https://ebrahim-hashish-software-engineer.vercel.app/"><img src="https://img.shields.io/badge/Live_Demo-Visit-A855F7?style=flat-square&logo=vercel" /></a></p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 📈 Ｔｅｌｅｍｅｔｒｙ　＆　Ｓｔａｔｓ
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A855F7&center=true&vCenter=true&width=940&lines=Engineering+scalable+and+production-ready+systems;Full-Stack+Developer+%7C+System+Architect;Turning+Ideas+into+Scalable+Solutions" alt="Typing SVG" />
 
-  <br />
+<img src="https://github-readme-stats.vercel.app/api?username=ebrahimelkordy&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00f4fe&text_color=FFFFFF&icon_color=A855F7&rank_icon=github" width="48%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ebrahimelkordy&theme=tokyonight&hide_border=true&background=0D1117&stroke=A855F7&ring=00f4fe&fire=00f4fe&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=A855F7&sideLabels=A855F7&dates=FFFFFF" width="48%" />
 
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+<br/><br/>
 
-  <br />
-
-  <img src="https://github-readme-stats.vercel.app/api?username=ebrahimelkordy&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=FFFFFF&icon_color=A855F7" alt="GitHub Stats" />
-
-  <br />
-
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ebrahimelkordy&theme=tokyonight&hide_border=true&background=0D1117&stroke=A855F7&ring=A855F7&fire=A855F7&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=A855F7&sideLabels=A855F7&dates=FFFFFF" alt="GitHub Streak" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ebrahimelkordy&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00f4fe&text_color=FFFFFF" width="48%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ebrahimelkordy&bg_color=0D1117&color=00f4fe&line=A855F7&point=FFFFFF&area=true&hide_border=true" width="48%" />
 
 </div>
 
 ---
 
-## 👋 About Me
+<div align="center">
 
-I'm **Ebrahim Elkordy**, a passionate Full-Stack Software Engineer specializing in building scalable, high-performance web applications. With expertise in modern JavaScript ecosystems, I transform complex business requirements into elegant, user-centric solutions.
-
-### 🎯 What I Do
-- **Full-Stack Development**: End-to-end application development from concept to deployment
-- **System Architecture**: Designing robust, scalable architectures for enterprise applications
-- **Performance Optimization**: Achieving sub-50ms response times and 99.9% uptime
-- **Security Engineering**: Implementing enterprise-grade security measures
-- **DevOps & Deployment**: Streamlining CI/CD pipelines and cloud deployments
-
----
-
-## 🏆 Featured Projects
-
-### 🏫 [Nibras LMS](https://github.com/ebrahimelkordy/nibras-lms) - Enterprise Learning Management System
-> A high-performance, multi-tenant SaaS platform for institutional education
-
-**🏗️ Architecture Excellence:**
-- **Multi-Tenant SaaS**: Isolated data environments for multiple institutions
-- **Real-Time Interactions**: Socket.IO-powered classroom features supporting 500+ concurrent users
-- **Performance**: 30-50ms API response times with Redis caching
-- **Security**: Granular RBAC, JWT authentication, CSRF/XSS protection
-
-**🛠️ Tech Stack:** Next.js 14, Node.js, MongoDB, Socket.IO, Redis, TypeScript, Tailwind CSS
-
-**📊 Impact:** 100% test coverage, OpenAPI 3.0 documentation, automated background processing
-
----
-
-### ⚽ [Soccer Street](https://github.com/ebrahimelkordy/soccer-street) - Tournament Management Platform
-> Complete architectural transformation of a 5v5 soccer tournament management system
-
-**🔄 Transformation Highlights:**
-- **Legacy Refactoring**: Migrated 1500+ line monolithic components to modular MVC architecture
-- **State Management**: Implemented Zustand + TanStack Query for efficient global state
-- **Security Hardening**: JWT authentication, Bcrypt hashing, rate limiting
-- **Real-Time Features**: Live tournament tracking and dynamic state management
-
-**🛠️ Tech Stack:** React 18, Node.js, Express.js, MongoDB, Zustand, TanStack Query, Tailwind CSS
-
-**📊 Impact:** 70% improvement in maintainability, 99.9% uptime, cross-platform deployment
-
----
-
-### 🛍️ [Zaad E-Commerce](https://github.com/ebrahimelkordy/Zaad-store) - Modern E-Commerce Platform
-> Full-stack e-commerce ecosystem with advanced analytics and automated marketing
-
-**🚀 Key Features:**
-- **Real-Time Analytics**: Interactive dashboards with sales trends and user metrics
-- **Automated Marketing**: AI-driven coupon generation for high-value orders
-- **Payment Security**: Stripe integration with server-side validation
-- **Cloud Infrastructure**: Vercel deployment with Redis caching and Cloudinary media optimization
-
-**🛠️ Tech Stack:** React 19, Node.js, MongoDB, Stripe, Redis, Cloudinary, Tailwind CSS, Framer Motion
-
-**📊 Impact:** Sub-50ms response times, secure payment processing, comprehensive API suite
-
----
-
-## 🛠️ Technical Expertise
-
-### **Frontend Mastery**
 ```javascript
-const skills = {
-  frameworks: ['React 18/19', 'Next.js 14', 'Vue.js'],
-  languages: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
-  stateManagement: ['Zustand', 'Redux', 'Context API', 'TanStack Query'],
-  styling: ['Tailwind CSS', 'Styled Components', 'SASS/SCSS'],
-  animations: ['Framer Motion', 'GSAP', 'CSS Animations'],
-  buildTools: ['Vite', 'Webpack', 'Parcel']
+/**
+ * @developer Ebrahim Hashish
+ * @mission To push the boundaries of what the web can do.
+ */
+class Engineer {
+  constructor() {
+    this.name = 'Ebrahim Elkordy';
+    this.role = 'Full-Stack Architect';
+    this.status = 'Building the future, one commit at a time.';
+  }
+  
+  execute() {
+    while (this.alive) {
+      this.code();
+      this.refactor();
+      this.deploy();
+    }
+  }
 }
 ```
 
-### **Backend Engineering**
-```javascript
-const backendSkills = {
-  runtime: ['Node.js', 'Python', 'Go'],
-  frameworks: ['Express.js', 'FastAPI', 'Gin'],
-  databases: ['MongoDB', 'PostgreSQL', 'Redis', 'MySQL'],
-  apis: ['REST', 'GraphQL', 'WebSocket', 'Socket.IO'],
-  authentication: ['JWT', 'OAuth 2.0', 'Session-based'],
-  security: ['Helmet', 'CORS', 'Rate Limiting', 'Bcrypt']
-}
-```
+<br/>
 
-### **DevOps & Cloud**
-```javascript
-const devopsSkills = {
-  platforms: ['Vercel', 'AWS', 'Docker', 'Railway'],
-  cicd: ['GitHub Actions', 'Jenkins', 'GitLab CI'],
-  monitoring: ['Winston', 'Morgan', 'DataDog'],
-  testing: ['Jest', 'Cypress', 'Supertest', 'React Testing Library'],
-  documentation: ['Swagger', 'OpenAPI 3.0', 'JSDoc']
-}
-```
-
----
-
-## 📈 GitHub Analytics
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ebrahimelkordy&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=FFFFFF" alt="Top Languages" />
-
-  <br />
-
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ebrahimelkordy&theme=tokyonight" alt="Profile Details" />
+<img src="https://komarev.com/ghpvc/?username=ebrahimelkordy&label=System+Pings&color=A855F7&style=for-the-badge" />
+<br/><br/>
+<p align="center"><i>Built with ☕ and <a href="https://nextjs.org/">Next.js</a> mentality.</i></p>
 </div>
-
----
-
-## 🎯 Current Focus
-
-- 🔭 **Exploring**: Advanced system design patterns and microservices architecture
-- 🌱 **Learning**: Cloud-native development with Kubernetes and serverless computing
-- 💡 **Building**: AI-powered applications and real-time collaborative platforms
-- 📚 **Sharing**: Technical knowledge through open-source contributions and mentoring
-
----
-
-## 📞 Let's Connect
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/ebrahim-hashish-3a104b214/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:ebrahimkordy0@email.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://ebrahim-hashish-software-engineer.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
-</div>
-
----
-
-## 💻 Coding Activity
-
-```text
-🌞 Morning    142 commits    ████▌░░░░░░░░░░░░░░░   18.2%
-🌆 Daytime    287 commits    ███████▍░░░░░░░░░░░   36.8%
-🌃 Evening    234 commits    ██████░░░░░░░░░░░░░   30.0%
-🌙 Night       97 commits    ███░░░░░░░░░░░░░░░░   12.4%
-
-💻 Operating System
-Windows                  15 hrs 30 mins  ████████████████████░   85.0%
-Linux                    2 hrs 45 mins   ███░░░░░░░░░░░░░░░░░   15.0%
-```
-
----
-
-## 🏆 Achievements & Certifications
-
-- ✅ **AWS Certified Developer** - Associate Level
-- ✅ **MongoDB Certified Developer**
-- ✅ **Google Cloud Professional Developer**
-- 🏅 **Hackathon Winner** - Built real-time collaboration tool
-- 📊 **Open Source Contributor** - 50+ PRs merged
-- 🎯 **Performance Optimization Expert** - Reduced load times by 60%
-
----
-
-## 🎨 Fun Facts
-
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote" />
-</div>
-
-- ☕ **Fuel**: Coffee-powered development sessions
-- 🌍 **Languages**: Fluent in Arabic & English
-- 🎯 **Hobbies**: MMA, strength training, and tech blogging.
-- 🔄 **Philosophy**: "Code is poetry written in logic"
-
----
-
-<div align="center">
-  <h3>🚀 Thanks for visiting my profile!</h3>
-  <p>I'm always open to discussing new opportunities, collaborations, or just geeking out about technology.</p>
-  <p><strong>Let's build something amazing together! 🌟</strong></p>
-
-  <br />
-
-  <img src="https://komarev.com/ghpvc/?username=ebrahimelkordy&label=Profile%20views&color=A855F7&style=for-the-badge" alt="Profile Views" />
-</div></content>
-<parameter name="filePath">c:\Users\DANTECH\Desktop\zaad\README_PROFILE.md
