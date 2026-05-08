@@ -1,0 +1,385 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 900 520" width="900" height="520">
+
+  <defs>
+    <!-- Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap');
+
+      .name { font-family: 'Syne', sans-serif; font-weight: 800; }
+      .mono { font-family: 'Space Mono', monospace; }
+      .title { font-family: 'Syne', sans-serif; font-weight: 700; }
+    </style>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0aff8a" stroke-width="0.15" opacity="0.3"/>
+    </pattern>
+
+    <!-- Noise filter -->
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="overlay" result="noised"/>
+      <feComposite in="noised" in2="SourceGraphic" operator="in"/>
+    </filter>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-strong" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-text" x="-10%" y="-50%" width="120%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Clip paths -->
+    <clipPath id="card-clip">
+      <rect x="0" y="0" width="900" height="520" rx="16"/>
+    </clipPath>
+
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020d07"/>
+      <stop offset="50%" stop-color="#040f09"/>
+      <stop offset="100%" stop-color="#010805"/>
+    </linearGradient>
+
+    <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0aff8a"/>
+      <stop offset="60%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#0aff8a"/>
+    </linearGradient>
+
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0aff8a" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#0aff8a" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#00e5ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0aff8a" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0.03"/>
+    </linearGradient>
+
+    <radialGradient id="orb1" cx="20%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#0aff8a" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0aff8a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="80%" cy="70%" r="35%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb3" cx="60%" cy="20%" r="25%">
+      <stop offset="0%" stop-color="#0aff8a" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0aff8a" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="stat-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0aff8a" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="skill-bar-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0aff8a"/>
+      <stop offset="100%" stop-color="#00c97a"/>
+    </linearGradient>
+    <linearGradient id="skill-bar-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#0099cc"/>
+    </linearGradient>
+    <linearGradient id="skill-bar-3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0aff8a"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+
+    <!-- Scanline pattern -->
+    <pattern id="scanlines" x="0" y="0" width="900" height="3" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="900" height="1" fill="#000" opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#card-clip)">
+
+    <!-- ── BACKGROUND ── -->
+    <rect width="900" height="520" fill="url(#bg-grad)"/>
+    <rect width="900" height="520" fill="url(#grid)"/>
+    <rect width="900" height="520" fill="url(#orb1)"/>
+    <rect width="900" height="520" fill="url(#orb2)"/>
+    <rect width="900" height="520" fill="url(#orb3)"/>
+    <rect width="900" height="520" fill="url(#scanlines)"/>
+
+    <!-- Animated orb pulse -->
+    <circle cx="160" cy="140" r="120" fill="#0aff8a" opacity="0">
+      <animate attributeName="opacity" values="0;0.04;0" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="100;140;100" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="740" cy="380" r="100" fill="#00e5ff" opacity="0">
+      <animate attributeName="opacity" values="0;0.05;0" dur="5s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="80;120;80" dur="5s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- ── CORNER BRACKETS ── -->
+    <!-- Top-left -->
+    <path d="M 20 50 L 20 20 L 50 20" fill="none" stroke="#0aff8a" stroke-width="2" opacity="0.6" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <!-- Top-right -->
+    <path d="M 850 20 L 880 20 L 880 50" fill="none" stroke="#0aff8a" stroke-width="2" opacity="0.6" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom-left -->
+    <path d="M 20 470 L 20 500 L 50 500" fill="none" stroke="#00e5ff" stroke-width="2" opacity="0.6" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom-right -->
+    <path d="M 850 500 L 880 500 L 880 470" fill="none" stroke="#00e5ff" stroke-width="2" opacity="0.6" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Vertical separator line -->
+    <line x1="340" y1="40" x2="340" y2="480" stroke="#0aff8a" stroke-width="0.5" opacity="0.2"/>
+
+    <!-- ── LEFT PANEL ── -->
+
+    <!-- STATUS indicator -->
+    <circle cx="52" cy="62" r="5" fill="#0aff8a" filter="url(#glow)">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="64" y="67" class="mono" font-size="10" fill="#0aff8a" opacity="0.7">AVAILABLE FOR HIRE</text>
+
+    <!-- NAME — big statement -->
+    <text x="50" y="130" class="name" font-size="52" fill="url(#name-grad)" filter="url(#glow-text)" opacity="0">
+      EBRAHIM
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.3s" fill="freeze"/>
+    </text>
+    <text x="50" y="185" class="name" font-size="52" fill="url(#name-grad)" filter="url(#glow-text)" opacity="0">
+      HASHISH
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.6s" fill="freeze"/>
+    </text>
+
+    <!-- Animated underline -->
+    <rect x="50" y="195" height="2" fill="url(#line-grad)" rx="1" width="0">
+      <animate attributeName="width" values="0;270" dur="0.8s" begin="0.9s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </rect>
+
+    <!-- Role -->
+    <text x="50" y="225" class="mono" font-size="12" fill="#00e5ff" letter-spacing="3" opacity="0">
+      FULL-STACK ENGINEER · MERN
+      <animate attributeName="opacity" values="0;0.9" dur="0.5s" begin="1.1s" fill="freeze"/>
+    </text>
+
+    <!-- Location -->
+    <text x="50" y="248" class="mono" font-size="10" fill="#4a8a6a" opacity="0">
+      ◈  Cairo, Egypt
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.3s" fill="freeze"/>
+    </text>
+
+    <!-- ── STATS ROW ── -->
+    <!-- Stat 1 -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.5s" fill="freeze"/>
+      <rect x="50" y="270" width="80" height="60" rx="8" fill="url(#card-grad)" stroke="url(#stat-border)" stroke-width="0.8"/>
+      <text x="90" y="298" class="name" font-size="20" fill="#0aff8a" text-anchor="middle" filter="url(#glow)">30ms</text>
+      <text x="90" y="316" class="mono" font-size="8" fill="#4a8a6a" text-anchor="middle">API RESPONSE</text>
+    </g>
+    <!-- Stat 2 -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.7s" fill="freeze"/>
+      <rect x="145" y="270" width="80" height="60" rx="8" fill="url(#card-grad)" stroke="url(#stat-border)" stroke-width="0.8"/>
+      <text x="185" y="298" class="name" font-size="20" fill="#00e5ff" text-anchor="middle" filter="url(#glow)">5000+</text>
+      <text x="185" y="316" class="mono" font-size="8" fill="#4a8a6a" text-anchor="middle">LINES REFACTORED</text>
+    </g>
+    <!-- Stat 3 -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.9s" fill="freeze"/>
+      <rect x="240" y="270" width="80" height="60" rx="8" fill="url(#card-grad)" stroke="url(#stat-border)" stroke-width="0.8"/>
+      <text x="280" y="298" class="name" font-size="20" fill="#0aff8a" text-anchor="middle" filter="url(#glow)">0</text>
+      <text x="280" y="316" class="mono" font-size="8" fill="#4a8a6a" text-anchor="middle">DATA LEAKS</text>
+    </g>
+
+    <!-- ── SKILL BARS ── -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.1s" fill="freeze"/>
+
+      <text x="50" y="358" class="mono" font-size="9" fill="#4a8a6a">SKILLS</text>
+
+      <!-- Node.js -->
+      <text x="50" y="378" class="mono" font-size="9" fill="#c8d8d0">Node.js</text>
+      <rect x="50" y="382" width="270" height="4" rx="2" fill="#0a1a10"/>
+      <rect x="50" y="382" width="0" height="4" rx="2" fill="url(#skill-bar-1)">
+        <animate attributeName="width" values="0;243" dur="1s" begin="2.3s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+      </rect>
+      <text x="304" y="386" class="mono" font-size="8" fill="#0aff8a">90%</text>
+
+      <!-- React / Next.js -->
+      <text x="50" y="402" class="mono" font-size="9" fill="#c8d8d0">React / Next.js</text>
+      <rect x="50" y="406" width="270" height="4" rx="2" fill="#0a1a10"/>
+      <rect x="50" y="406" width="0" height="4" rx="2" fill="url(#skill-bar-2)">
+        <animate attributeName="width" values="0;243" dur="1s" begin="2.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+      </rect>
+      <text x="304" y="410" class="mono" font-size="8" fill="#00e5ff">90%</text>
+
+      <!-- Architecture -->
+      <text x="50" y="426" class="mono" font-size="9" fill="#c8d8d0">SaaS Architecture</text>
+      <rect x="50" y="430" width="270" height="4" rx="2" fill="#0a1a10"/>
+      <rect x="50" y="430" width="0" height="4" rx="2" fill="url(#skill-bar-3)">
+        <animate attributeName="width" values="0;216" dur="1s" begin="2.7s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+      </rect>
+      <text x="304" y="434" class="mono" font-size="8" fill="#0aff8a">80%</text>
+    </g>
+
+    <!-- Quote -->
+    <text x="50" y="480" class="mono" font-size="9" fill="#2a5a3a" opacity="0" font-style="italic">
+      "Systems that scale. Code that lasts."
+      <animate attributeName="opacity" values="0;0.8" dur="1s" begin="3s" fill="freeze"/>
+    </text>
+
+    <!-- ── RIGHT PANEL ── -->
+
+    <!-- Section header -->
+    <text x="368" y="67" class="mono" font-size="10" fill="#0aff8a" opacity="0" letter-spacing="2">
+      PROJECTS
+      <animate attributeName="opacity" values="0;0.7" dur="0.5s" begin="1.4s" fill="freeze"/>
+    </text>
+    <line x1="368" y1="73" x2="860" y2="73" stroke="#0aff8a" stroke-width="0.4" opacity="0.2"/>
+
+    <!-- ── PROJECT CARD 1 — LMS ── -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.6s" fill="freeze"/>
+
+      <rect x="368" y="85" width="492" height="118" rx="10"
+        fill="#020d07" stroke="#0aff8a" stroke-width="0.8" stroke-opacity="0.3"/>
+      <!-- accent top bar -->
+      <rect x="368" y="85" width="492" height="3" rx="2" fill="url(#line-grad)" opacity="0.6"/>
+
+      <!-- live badge -->
+      <rect x="792" y="96" width="56" height="18" rx="9" fill="#0aff8a" fill-opacity="0.12" stroke="#0aff8a" stroke-width="0.8" stroke-opacity="0.5"/>
+      <circle cx="802" cy="105" r="3" fill="#0aff8a">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="808" y="109" class="mono" font-size="8" fill="#0aff8a">LIVE</text>
+
+      <text x="384" y="111" class="title" font-size="16" fill="#ffffff">Nibras LMS</text>
+      <text x="384" y="127" class="mono" font-size="9" fill="#4a8a6a">Multi-Tenant SaaS Platform · 02/2026 → Present</text>
+
+      <text x="384" y="148" class="mono" font-size="9" fill="#8ab8a0">▸ Role-based tenant isolation — zero cross-tenant data leakage</text>
+      <text x="384" y="164" class="mono" font-size="9" fill="#8ab8a0">▸ JWT + Redis caching · Socket.IO real-time · Zoom API</text>
+
+      <!-- Tech pills -->
+      <g class="mono" font-size="8">
+        <rect x="384" y="174" width="44" height="15" rx="7" fill="#0aff8a" fill-opacity="0.1" stroke="#0aff8a" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="406" y="185" fill="#0aff8a" text-anchor="middle">Next.js</text>
+
+        <rect x="434" y="174" width="48" height="15" rx="7" fill="#0aff8a" fill-opacity="0.1" stroke="#0aff8a" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="458" y="185" fill="#0aff8a" text-anchor="middle">Node.js</text>
+
+        <rect x="488" y="174" width="52" height="15" rx="7" fill="#00e5ff" fill-opacity="0.08" stroke="#00e5ff" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="514" y="185" fill="#00e5ff" text-anchor="middle">MongoDB</text>
+
+        <rect x="546" y="174" width="36" height="15" rx="7" fill="#00e5ff" fill-opacity="0.08" stroke="#00e5ff" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="564" y="185" fill="#00e5ff" text-anchor="middle">Redis</text>
+
+        <rect x="588" y="174" width="52" height="15" rx="7" fill="#0aff8a" fill-opacity="0.1" stroke="#0aff8a" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="614" y="185" fill="#0aff8a" text-anchor="middle">Socket.IO</text>
+      </g>
+    </g>
+
+    <!-- ── PROJECT CARD 2 — Soccer Street ── -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.9s" fill="freeze"/>
+
+      <rect x="368" y="218" width="492" height="110" rx="10"
+        fill="#020d07" stroke="#00e5ff" stroke-width="0.8" stroke-opacity="0.3"/>
+      <rect x="368" y="218" width="492" height="3" rx="2" fill="url(#line-grad)" opacity="0.4"/>
+
+      <text x="384" y="244" class="title" font-size="16" fill="#ffffff">Soccer Street</text>
+      <text x="384" y="260" class="mono" font-size="9" fill="#4a8a6a">Full-Stack Architecture Refactor · 01/2026 → 02/2026</text>
+
+      <!-- Before/After mini visual -->
+      <rect x="650" y="228" width="90" height="22" rx="4" fill="#1a0505" stroke="#ff4444" stroke-width="0.5" stroke-opacity="0.5"/>
+      <text x="695" y="243" class="mono" font-size="7" fill="#ff6666" text-anchor="middle">5500+ LoC Monolith</text>
+      <text x="745" y="243" class="mono" font-size="10" fill="#4a8a6a">→</text>
+      <rect x="754" y="228" width="50" height="22" rx="4" fill="#001a08" stroke="#0aff8a" stroke-width="0.5" stroke-opacity="0.5"/>
+      <text x="779" y="243" class="mono" font-size="7" fill="#0aff8a" text-anchor="middle">MVC ✓</text>
+
+      <text x="384" y="280" class="mono" font-size="9" fill="#8ab8a0">▸ Decomposed monolithic codebase into clean modular MVC</text>
+      <text x="384" y="296" class="mono" font-size="9" fill="#8ab8a0">▸ Improved reusability and separation of concerns across all layers</text>
+
+      <g class="mono" font-size="8">
+        <rect x="384" y="308" width="36" height="15" rx="7" fill="#00e5ff" fill-opacity="0.08" stroke="#00e5ff" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="402" y="319" fill="#00e5ff" text-anchor="middle">React</text>
+
+        <rect x="426" y="308" width="48" height="15" rx="7" fill="#00e5ff" fill-opacity="0.08" stroke="#00e5ff" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="450" y="319" fill="#00e5ff" text-anchor="middle">Express</text>
+
+        <rect x="480" y="308" width="52" height="15" rx="7" fill="#0aff8a" fill-opacity="0.1" stroke="#0aff8a" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="506" y="319" fill="#0aff8a" text-anchor="middle">MongoDB</text>
+
+        <rect x="538" y="308" width="28" height="15" rx="7" fill="#0aff8a" fill-opacity="0.1" stroke="#0aff8a" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="552" y="319" fill="#0aff8a" text-anchor="middle">JWT</text>
+      </g>
+    </g>
+
+    <!-- ── PROJECT CARD 3 — Zaad ── -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="2.2s" fill="freeze"/>
+
+      <rect x="368" y="343" width="492" height="100" rx="10"
+        fill="#020d07" stroke="#0aff8a" stroke-width="0.8" stroke-opacity="0.2"/>
+      <rect x="368" y="343" width="492" height="3" rx="2" fill="url(#line-grad)" opacity="0.3"/>
+
+      <text x="384" y="368" class="title" font-size="16" fill="#ffffff">Zaad E-Commerce</text>
+      <text x="384" y="383" class="mono" font-size="9" fill="#4a8a6a">Full-Stack Platform · Stripe · Real-Time Analytics</text>
+
+      <text x="384" y="403" class="mono" font-size="9" fill="#8ab8a0">▸ Stripe-secured payments · AI-driven coupon engine · Redis cache</text>
+      <text x="384" y="418" class="mono" font-size="9" fill="#8ab8a0">▸ Sub-50ms responses · Cloudinary media · Interactive dashboards</text>
+
+      <g class="mono" font-size="8">
+        <rect x="384" y="428" width="50" height="15" rx="7" fill="#0aff8a" fill-opacity="0.1" stroke="#0aff8a" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="409" y="439" fill="#0aff8a" text-anchor="middle">React 19</text>
+
+        <rect x="440" y="428" width="36" height="15" rx="7" fill="#00e5ff" fill-opacity="0.08" stroke="#00e5ff" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="458" y="439" fill="#00e5ff" text-anchor="middle">Stripe</text>
+
+        <rect x="482" y="428" width="36" height="15" rx="7" fill="#00e5ff" fill-opacity="0.08" stroke="#00e5ff" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="500" y="439" fill="#00e5ff" text-anchor="middle">Redis</text>
+
+        <rect x="524" y="428" width="60" height="15" rx="7" fill="#0aff8a" fill-opacity="0.1" stroke="#0aff8a" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="554" y="439" fill="#0aff8a" text-anchor="middle">Cloudinary</text>
+      </g>
+    </g>
+
+
+
+    <!-- ── SCANNING LINE ANIMATION ── -->
+    <rect x="0" y="-4" width="900" height="4" fill="url(#line-grad)" opacity="0.15">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="0,524"
+        dur="4s" repeatCount="indefinite" calcMode="linear"/>
+    </rect>
+
+    <!-- ── FLOATING PARTICLES ── -->
+    <circle cx="820" cy="100" r="1.5" fill="#0aff8a" opacity="0.4">
+      <animate attributeName="cy" values="100;80;100" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="150" r="1" fill="#00e5ff" opacity="0.3">
+      <animate attributeName="cy" values="150;130;150" dur="4s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="860" cy="60" r="1" fill="#0aff8a" opacity="0.5">
+      <animate attributeName="cy" values="60;45;60" dur="2.5s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Border glow -->
+    <rect x="1" y="1" width="898" height="518" rx="16" fill="none"
+      stroke="#0aff8a" stroke-width="1" stroke-opacity="0.15"/>
+
+  </g>
+</svg>
